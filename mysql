@@ -1,0 +1,49 @@
+mysql 
+
+SELECT
+	a.SQL_TEXT,
+	concat("kill ",c.id, ";"),
+	d.trx_started
+FROM
+	events_statements_current a
+JOIN threads b ON a.THREAD_ID = b.THREAD_ID
+JOIN information_schema. PROCESSLIST c ON b.PROCESSLIST_ID = c.id
+JOIN information_schema.innodb_trx d ON c.id = d.trx_mysql_thread_id
+WHERE
+	a.current_schema = 'data_repo';
+ORDER BY
+	d.trx_started;
+
+查询显示事务未提交和失败超时的
+
+
+service cron status
+service cron restart
+service cron stop
+service cron start
+ 
+docker容器查看容器中Linux版本正确的姿势： 
+cat /etc/issue
+
+错误的姿势: 
+cat /proc/version 或 uname -a ，这样查到的是宿主机的系统。
+
+老板账号：
+
+
+2085373196022013958
+
+170215.IB
+DR014-2085381807926404096
+GC014-2085382140467602433
+2085371826841804804
+2085372172838330371
+2085372364434137096
+2085372364434137096
+2085373196022013958 
+X16066.SH
+
+ teamview 
+ 账号：1067073865
+ 密码：b41rg8
+       

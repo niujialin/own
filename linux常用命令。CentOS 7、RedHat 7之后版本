@@ -1,0 +1,10 @@
+linux常用命令。CentOS 7、RedHat 7之后版本
+
+lsb_release -a 查看服务器版本
+cat /proc/issue  查看服务器发行情况
+
+firewall-cmd state 查看防火墙状态
+systemctl start firewalld.service 开启防火墙
+
+systemctl stop firewalld.service 关闭防火墙
+

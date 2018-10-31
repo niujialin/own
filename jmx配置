@@ -1,0 +1,9 @@
+jmx配置
+-Djava.rmi.server.hostname=ip
+-Dcom.sun.management.jmxremote
+-Dcom.sun.management.jmxremote.rmi.port=11199 这个必须有
+-Dcom.sun.management.jmxremote.port=1199
+-Dcom.sun.management.jmxremote.authenticate=false
+-Dcom.sun.management.jmxremote.ssl=false
+
+生产环境 rm-uf6qiq50535mv8ypyo.mysql.rds.aliyuncs.com
